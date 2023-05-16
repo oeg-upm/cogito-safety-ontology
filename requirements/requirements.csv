@@ -6,4 +6,5 @@
 "SAFE-5	Hazard zones are implied by analisis zones. In particular, fall hazard zones are implied by movement zones and hole zones"
 "SAFE-6	Safety issues include an identifier, a name and a severity indicator"
 "SAFE-7	Safety issues are mitigared by  mitigation elements, which have to be distinguished from other elements"
-"SAFE-8	A safety issue can be related to the location where it is "
+"SAFE-8	A safety issue not automatically detected is related to the location where it is "
+"SAFE-9	A safety issue not automatically detected is related to the worker who has reported it "
