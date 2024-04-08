@@ -1,0 +1,83 @@
+@prefix : <http://example.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://example.org/ns#> .
+
+
+
+:Test1 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "ReportedSafetyIssue reportedByWorker Worker" .
+
+:Test2 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "ReportedSafetyIssue hasLocation Point" .
+
+:Test3 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "ReportedSafetyIssue subClassOf SafetyIssue" .
+
+:Test4 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "DetectedSafetyIssue subClassOf SafetyIssue" .
+
+:Test5 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "HazardZone hasSafetyIssue DetectedSafetyIssue" .
+
+:Test6 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "NormalElement subClassOf Element" .
+
+:Test7 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "MitigationElement subClassOf Element" .
+
+:Test8 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "SafetyIssue isMitigatedByElement MitigationElement" .
+
+:Test9 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "SafetyIssue severity string" .
+
+:Test10 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "SafetyIssue description string" .
+
+:Test11 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "SafetyIssue identifier literal" .
+
+:Test12 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "FallHazardZone impliedByHole HoleZone" .
+
+:Test13 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "FallHazardZone impliedByMovement MovementZone" .
+
+:Test14 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "HazardZone impliedByZone SpatialZone" .
+
+:Test15 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "FallHazardZone subClassOf HazardZone" .
+
+:Test16 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "HazardZone subClassOf SpatialZone" .
+
+:Test17 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "HoleZone subClassOf AnalysisZone" .
+
+:Test18 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "MovementZone subClassOf AnalysisZone" .
+
+:Test19 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "AnalysisZone subClassOf SpatialZone" .
